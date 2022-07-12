@@ -1,12 +1,13 @@
 #include "main.h"
 
 /**
- * _printf - This functions prints the (“character, 
- * string, float, integer, octal and hexadecimal values”) 
+ * _printf - This functions prints the (“character,
+ * string, float, integer, octal and hexadecimal values”)
  * onto the output screen
  *
  * @format: the format of the characters
- * @
+ *
+ * Return: the characters the function prints
  */
 
 
