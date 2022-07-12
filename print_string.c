@@ -1,9 +1,9 @@
 #include "main.h"
 /**
-  *print_str - prints string followed by a new line.
+  *print_str - p
   *@str: - pointer to char.
   *
-  *Return: - returns int. 
+  *Return: - returns int.
   */
 int print_str(char *str)
 {
