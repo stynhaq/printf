@@ -12,7 +12,7 @@
 
 int _printf(const char *format, ...);
 int _putchar(char c);
-int print_num(long int n);
+int int_fs(long int n);
 int print_str(char *str);
 int print_binary(unsigned int num);
 int print_unknown_spec(char c);
