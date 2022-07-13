@@ -2,11 +2,11 @@
 #include <stdio.h>
 
 /**
- * print_num - prints the digits of an interger
+ * fs_int - prints the digits of an interger
  * @n: integer to be printed
  * Return: no return value
  */
-int print_num(long int n)
+int fs_int(long int n)
 {
 	unsigned long int x, base;
 	int chars_printed = 0;
