@@ -12,6 +12,6 @@ int fs_pointer(void *p)
 	int chars = 0;
 
 	chars += print_str("0x");
-	chars += print_odh('x', (unsigned long int)p);
+	chars += fs_odh('x', (unsigned long int)p);
 	return (chars);
 }
