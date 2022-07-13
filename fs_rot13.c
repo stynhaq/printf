@@ -45,7 +45,7 @@ int fs_rot13(char *s)
 		len++;
 	}
 	*(rot13d + len) = '\0';
-	chars_printed = print_string(rot13d);
+	chars_printed = print_str(rot13d);
 	free(rot13d);
 	return (chars_printed);
 }

@@ -29,7 +29,7 @@ int fs_reverse(char *s)
 			z++;
 		}
 		*(str + x) = '\0';
-		chars_printed = print_string(str);
+		chars_printed = print_str(str);
 		return (chars_printed);
 	}
 	return (0);

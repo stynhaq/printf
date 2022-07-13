@@ -30,7 +30,7 @@ int _printf(const char *format, ...)
 				chars += format[x] == 'c' ? _putchar(va_arg(args, int)) :
 				print_str(va_arg(args, char *));
 			else if (format[x] == 'd' || format[x] == 'i')
-				chars += int_fs(va_arg(args, int));
+				chars += fs_int(va_arg(args, int));
 			else if (format[x] == 'b')
 				chars += fs_binary((unsigned int)va_arg(args, int));
 			else if (format[x] == 'r')
