@@ -7,6 +7,7 @@
  *
  * Return: chars
  */
+
 int fs_unknown_spec(char c)
 {
 	int chars = 0;

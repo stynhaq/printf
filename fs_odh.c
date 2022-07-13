@@ -8,13 +8,13 @@
  */
 int dec_to_oct(unsigned int num)
 {
-	int chars_printed = 0;
+	int chars = 0;
 
 	if (!num)
 		return (0);
-	chars_printed += (dec_to_oct(num / 8));
-	chars_printed += _putchar('0' + num % 8);
-	return (chars_printed);
+	chars += (dec_to_oct(num / 8));
+	chars += _putchar('0' + num % 8);
+	return (chars);
 }
 
 /**
@@ -26,18 +26,18 @@ int dec_to_oct(unsigned int num)
  */
 int dec_to_hex(char c, unsigned int num)
 {
-	int chars_printed = 0;
+	int chars = 0;
 
 	if (!num)
 		return (0);
-	chars_printed += dec_to_hex(c, num / 16);
+	chars += dec_to_hex(c, num / 16);
 	if (num % 16 < 10)
-		chars_printed += _putchar('0' + num % 16);
+		chars += _putchar('0' + num % 16);
 	else if (num % 16 > 9 && c == 'x')
-		chars_printed += _putchar(87 + num % 16);
+		chars += _putchar(87 + num % 16);
 	else
-		chars_printed += _putchar(55 + num % 16);
-	return (chars_printed);
+		chars += _putchar(55 + num % 16);
+	return (chars);
 }
 
 /**
@@ -49,17 +49,17 @@ int dec_to_hex(char c, unsigned int num)
  */
 int fs_odh(char c, unsigned int num)
 {
-	int chars_printed = 0;
+	int chars = 0;
 
 	if (c == 'u')
-		chars_printed += fs_int(num);
+		chars += fs_int(num);
 	else if (c == 'o' && num == 0)
-		chars_printed = print_str("00");
+		chars = print_str("00");
 	else if (c == 'o')
-		chars_printed += dec_to_oct(num);
+		chars += dec_to_oct(num);
 	else if ((c == 'x' || c == 'X') && num == 0)
-		chars_printed += print_str("00");
+		chars += print_str("00");
 	else
-		chars_printed += dec_to_hex(c, num);
-	return (chars_printed);
+		chars += dec_to_hex(c, num);
+	return (chars);
 }
