@@ -11,7 +11,7 @@ int fs_unknown_spec(char c)
 {
 	int chars = 0;
 
-	if (c != '%')
+	if (c == '%')
 	{
 		chars += _putchar('%');
 	}
