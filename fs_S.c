@@ -19,7 +19,7 @@ int fs_S(char *str)
 			chars += _putchar('\\');
 			chars += _putchar('x');
 			chars += _putchar('0');
-			chars += print_odh('X', (unsigned int)c);
+			chars += fs_odh('X', (unsigned int)c);
 		}
 		else
 		{
