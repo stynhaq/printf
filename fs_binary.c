@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * print_binary - converts an unsigned int to binary
+ * fs_binary - converts an unsigned int to binary
  * @num: int to be converted
  *
  * Return: no of resulting binary characters
